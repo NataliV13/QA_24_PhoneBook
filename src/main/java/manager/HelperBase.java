@@ -20,10 +20,8 @@ public void type(By locator,String text){
        element.click();
        element.clear();
     if(text!= null) {
-
        element.sendKeys(text);
    }
-
     }
 public void  click(By locator){
         WebElement element = wd.findElement(locator);
