@@ -32,4 +32,5 @@ public void  click(By locator){
         return list.size()>0;
     }
 
+
 }
