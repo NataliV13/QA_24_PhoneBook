@@ -34,17 +34,15 @@ public class HelperBase {
     }
 
 
-
-
-    public boolean isElementPresent(By locator){
+    public boolean isElementPresent(By locator) {
         List<WebElement> list = wd.findElements(locator);
-        return list.size()>0;
+        return list.size() > 0;
     }
 
     public boolean isAlertPresent(String message) {
-        Alert alert = new WebDriverWait(wd,10)
+        Alert alert = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.alertIsPresent());
-        if(alert!=null&&alert.getText().contains(message)){
+        if (alert != null && alert.getText().contains(message)) {
             System.out.println(alert.getText());
 
             //click ok --> alert.assert();
@@ -57,7 +55,8 @@ public class HelperBase {
         }
         return false;
     }
-    public void pause(int time){
+
+    public void pause(int time) {
         try {
             Thread.sleep(time)
             ;
@@ -65,3 +64,4 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
     }
+}
