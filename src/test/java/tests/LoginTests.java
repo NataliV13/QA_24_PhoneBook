@@ -41,6 +41,7 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Wrong email or password"));
 
 
+
     }
     @Test
     public void loginWrongPassword(){
