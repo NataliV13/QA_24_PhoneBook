@@ -24,7 +24,6 @@ public class LoginTests extends TestBase{
         //Assert.assertFalse();
 
         Assert.assertTrue(app.getHelperUser().isLogged());
-
     }
     @Test
     public void loginSuccessModel() {
